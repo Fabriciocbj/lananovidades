@@ -34,27 +34,43 @@
                                             <p class="card-text">O sistema do Detran libera a partir de 24 horas o documento atualizado.</p>
                                         </div>
                                         <div class="card-footer">
-                                            <button type="button" class="btn btn-success">Acesse por aqui</button>
+                                            <button onclick="window.open('https://www.detran.sp.gov.br/wps/portal/!ut/p/z1/lZFLDoIwFEXXwgp6SxtShgWB8guCCtiJYWRIFB0Y1y8wI9GCd9b0nPblXaJJS_TQvftr9-ofQ3cbz2ftXLCIhFfZHgMin5NmBhjHwfWoBJgSkKI6KpmBgjtEj9ecugGlPvKiVgFKFSq6hxgfwIof8T99EdTh5LOQBoWNFNv8pISvlLCziO58SJfzPE5SBpdt8_EjcuP_BkBv2b8B0ObxGqJnxNSgEZgqWgJfOpgB05LXxnzeT3Na9HEvLesDV9RSXQ!!/dz/d5/L2dBISEvZ0FBIS9nQSEh/#Z7_419E11C0MOVHE0QHFH1P080040', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
                                         </div>
                                     </div>
                                     <div class="card">
-                                        <img src="{{ asset('storage/Mei-Das.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
+                                        <img src="{{ asset('storage/planodesaude.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
                                         <div class="card-body">
-                                            <h5 class="card-title">Das-Mei</h5>
-                                            <p class="card-text">Programa Gerador de DAS do Microempreendedor Individual.</p>
+                                            <h5 class="card-title">Boletos Saúde</h5>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('http://tomcatplano.hospfreigalvao.com.br:8080/PlanodeSaude/', '_blank')" type="button" class="btn btn-success col-10">Frei Galvão</button>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('https://webhap.hapvida.com.br/pls/webhap/webNewBoleto.login', '_blank')" type="button" class="btn btn-success col-10">Hapvida</button>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('http://solus.unimedlimeira.com.br/solusweb/usuario/', '_blank')" type="button" class="btn btn-success col-10">Unimed</button>
+                                            </div>
                                         </div>
-                                        <div class="card-footer">
-                                            <button onclick="window.open('http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATSPO/pgmei.app/Identificacao', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
+                                    </div>
+                                    <div class="card">
+                                        <img src="{{ asset('storage/planodesaude.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Resultado Exames</h5>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('https://tomcat.santacasalimeira.com.br/LaboratorioWeb/indexLaboratorio.jsp', '_blank')" type="button" class="btn btn-success col-10">Frei Galvão</button>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('https://resultadoexame.hapvida.com.br/autenticacao.xhtml', '_blank')" type="button" class="btn btn-success col-10">Hapvida</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <img src="{{ asset('storage/Curriculo.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
                                         <div class="card-body">
                                             <h5 class="card-title">Currículo</h5>
-                                            <!-- <p class="card-text">Programa Gerador de DAS do Microempreendedor Individual.</p> -->
                                         </div>
                                         <div class="card-footer">
-                                            <button onclick="window.open('http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATSPO/pgmei.app/Identificacao', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
+                                            <button onclick="window.open('https://www.canva.com/folder/FAFMJ7meJWk', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
                                         </div>
                                     </div>
                                     <div class="card">
@@ -76,22 +92,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <img src="{{ asset('storage/planodesaude.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Boletos Saúde</h5>
-                                            <div class="card-footer">
-                                                <button onclick="window.open('http://tomcatplano.hospfreigalvao.com.br:8080/PlanodeSaude/', '_blank')" type="button" class="btn btn-success col-10">Frei Galvão</button>
-                                            </div>
-                                            <div class="card-footer">
-                                                <button onclick="window.open('https://webhap.hapvida.com.br/pls/webhap/webNewBoleto.login', '_blank')" type="button" class="btn btn-success col-10">Hapvida</button>
-                                            </div>
-                                            <div class="card-footer">
-                                                <button onclick="window.open('http://solus.unimedlimeira.com.br/solusweb/usuario/', '_blank')" type="button" class="btn btn-success col-10">Unimed</button>
-                                            </div>
-                                        </div>
-
-                                    </div>
                                 </div>
                             </div>
                             </br>
@@ -100,7 +100,16 @@
                                 <div class="card-group">
 
                                     <div class="card">
-
+                                        <img src="{{ asset('storage/Mei-Das.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Das-Mei</h5>
+                                            <p class="card-text">Programa Gerador de DAS do Microempreendedor Individual.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button onclick="window.open('http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATSPO/pgmei.app/Identificacao', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
                                         <img src="{{ asset('storage/AntecedentesCriminais.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
                                         <div class="card-body">
                                             <h5 class="card-title">Antecedentes Criminais</h5>
@@ -123,16 +132,6 @@
                                     </div> -->
                                     </div>
                                     <div class="card">
-                                        <!-- <img src="{{ asset('storage/boleto-planodesaude.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Boletos</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <button type="button" class="btn btn-success">Acesse por aqui</button>
-                                        </div> -->
-                                    </div>
-                                    <div class="card">
                                         <!-- <img src="{{ asset('storage/provedores.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
 
                                         <div class="card-body">
@@ -149,19 +148,16 @@
                                         </div> -->
                                     </div>
                                     <div class="card">
-                                        <!-- <img src="{{ asset('storage/planodesaude.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
+                                        <img src="{{ asset('storage/letrasMusicas.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
                                         <div class="card-body">
-                                            <h5 class="card-title">Boletos Saúde</h5>
+                                            <h5 class="card-title">Letras Músicas</h5>
                                             <div class="card-footer">
-                                                <button onclick="window.open('http://tomcatplano.hospfreigalvao.com.br:8080/PlanodeSaude/', '_blank')" type="button" class="btn btn-success col-10">Frei Galvão</button>
+                                                <button onclick="window.open('https://www.cifraclub.com.br/', '_blank')" type="button" class="btn btn-success col-10">Cifra Clube</button>
                                             </div>
                                             <div class="card-footer">
-                                                <button onclick="window.open('https://webhap.hapvida.com.br/pls/webhap/webNewBoleto.login', '_blank')" type="button" class="btn btn-success col-10">Hapvida</button>
+                                                <button onclick="window.open('https://www.letras.mus.br/', '_blank')" type="button" class="btn btn-success col-10">Letras</button>
                                             </div>
-                                            <div class="card-footer">
-                                                <button onclick="window.open('http://solus.unimedlimeira.com.br/solusweb/usuario/', '_blank')" type="button" class="btn btn-success col-10">Unimed</button>
-                                            </div>
-                                        </div> -->
+                                        </div>
 
                                     </div>
                                 </div>
