@@ -29,7 +29,7 @@
                                         <img src="{{ asset('storage/2ViaDocVeiculo.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
 
                                         <div class="card-body">
-                                            <h5 class="card-title">Detran 2 via Doc</h5>                                            
+                                            <h5 class="card-title">Detran 2 via Doc</h5>
                                             <hr />
                                             <p class="card-text">Para retirar a segunda via atualizada é necessário ter feito o pagamento do licenciamento.</p>
                                             <p class="card-text">O sistema do Detran libera a partir de 24 horas o documento atualizado.</p>
@@ -131,8 +131,9 @@
                                         <div class="card-body">
                                             <h5 class="card-title">Antecedentes Criminais</h5>
                                             <hr />
-                                            <!-- <p class="card-text">Para retirar a segunda via atualizada é necessário ter feito o pagamento do licenciamento.</p>
-                                            <p class="card-text">O sistema do Detran libera a partir de 24 horas o documento atualizado.</p> -->
+                                            <p class="card-text">Valor a ser cobrado é de R$ 5,00 para cada documento.</p>
+                                            <p class="card-text">Caso tenha mais de uma página cobrar R$ 0,50 a mais para cada página.</p>
+
                                         </div>
                                         <div class="card-footer">
                                             <button onclick="window.open('https://www.ssp.sp.gov.br/servicos/atestado.aspx', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
@@ -140,30 +141,35 @@
                                         </div>
                                     </div>
                                     <div class="card">
-                                        <!-- <img src="{{ asset('storage/Curriculo.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
+                                        <img src="{{ asset('storage/cpf.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
                                         <div class="card-body">
-                                            <h5 class="card-title">Currículo</h5>
-                                            <p class="card-text">Programa Gerador de DAS do Microempreendedor Individual.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <button onclick="window.open('http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATSPO/pgmei.app/Identificacao', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
-                                    </div> -->
+                                            <h5 class="card-title">CPF</h5>
+                                            <p class="card-text">Valor a ser cobrado é de R$ 5,00 para cada documento/consulta.</p>
+                                            <p class="card-text">Caso tenha mais de uma página cobrar R$ 0,50 a mais para cada página.</p>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('https://servicos.receita.fazenda.gov.br/servicos/cpf/consultasituacao/consultapublica.asp', '_blank')" type="button" class="btn btn-success col-10">Consulta CPF</button>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('https://servicos.receita.fazenda.gov.br/Servicos/CPF/alterar/default.asp', '_blank')" type="button" class="btn btn-success col-10">Atualiza CPF</button>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('https://servicos.receita.fazenda.gov.br/Servicos/CPF/ImpressaoComprovante/ConsultaImpressao.asp', '_blank')" type="button" class="btn btn-success col-10">Comprovante de Inscrição</button>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('https://cav.receita.fazenda.gov.br/autenticacao/login/index/5090', '_blank')" type="button" class="btn btn-success col-10">Obter o cartão de CPF</button>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="card">
-                                        <!-- <img src="{{ asset('storage/provedores.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
+                                        <img src="{{ asset('storage/musicamp3.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
 
                                         <div class="card-body">
-                                            <h5 class="card-title">Boletos Telefone</h5>
-                                            <div class="card-footer">
-                                                <button onclick="window.open('https://meutim.tim.com.br/novo/login?bmctx=8B94D49C137CCFE1FA9512A461AC79DB4FBA69EFB5FA39109654FE9A6E39100A&contextType=external&username=string&enablePersistentLogin=true&contextValue=%2Foam&password=secure_string&challenge_url=https%3A%2F%2Fmeutim.tim.com.br%2Fnovo%2Flogin&request_id=4872571515521280402&authn_try_count=0&locale=en_US&resource_url=https%253A%252F%252Fmeutim.tim.com.br%252Fmenu%252Fminha-conta%252Fconta-online%253F_ga%253D2.7578418.1807873059.1627909602-788225989.1626979103%20TIM%20Live', '_blank')" type="button" class="btn btn-success col-10">Tim</button>
-                                            </div>
-                                            <div class="card-footer">
-                                                <button onclick="window.open('https://fatura-facil.claro.com.br/', '_blank')" type="button" class="btn btn-success col-10">Claro</button>
-                                            </div>
-                                            <div class="card-footer">
-                                                <button onclick="window.open('https://api.whatsapp.com/send?phone=5511999151515&text=Ol%C3%A1!!', '_blank')" type="button" class="btn btn-success col-10">Vivo</button>
-                                            </div>
-                                        </div> -->
+                                            <h5 class="card-title">Download Musicas MP3 no pen drive</h5>
+                                            <p class="card-text">Valor a ser cobrado é de R$ 20,00.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button onclick="window.open('https://bluemusic.com.br/baixar-musica-do-youtube/', '_blank')" type="button" class="btn btn-success col-10">Acesse por aqui</button>
+                                        </div>
                                     </div>
                                     <div class="card">
                                         <img src="{{ asset('storage/letrasMusicas.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
