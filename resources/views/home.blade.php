@@ -150,7 +150,7 @@
                                             <h5 class="card-title">CPF</h5>
                                             <hr />
                                             <p class="card-text">Valor a ser cobrado é de R$ 5,00 para cada documento/consulta.</p>
-                                            <p class="card-text">Caso cliente queira impressão em colorido o documento ficará R$ 7,00</p>
+                                            <p class="card-text">Caso cliente queira impressão em colorido, cobrar mais R$ 2,00</p>
                                             <div class="card-footer">
                                                 <button onclick="window.open('https://servicos.receita.fazenda.gov.br/servicos/cpf/consultasituacao/consultapublica.asp', '_blank')" type="button" class="btn btn-success col-10">Consulta CPF</button>
                                             </div>
