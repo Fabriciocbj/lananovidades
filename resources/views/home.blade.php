@@ -71,6 +71,9 @@
                                             <div class="card-footer">
                                                 <button onclick="window.open('https://resultadoexame.hapvida.com.br/autenticacao.xhtml', '_blank')" type="button" class="btn btn-success col-10">Hapvida</button>
                                             </div>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('https://meddiagnostico.com.br/site', '_blank')" type="button" class="btn btn-success col-10">Med Diagnostico</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
@@ -81,6 +84,7 @@
                                             <p class="card-text">Valor a ser cobrado é de R$ 5,00.</p>
                                             <p class="card-text">Caso tenha mais de uma página e o cliente preferir (preto/branco) cobrar R$ 0,50 a mais para cada página.</p>
                                             <p class="card-text">Caso tenha mais de uma página e o cliente preferir (colorido) cobrar R$ 2,00 a mais para cada página.</p>
+                                            <p class="card-text">Caso o cliente queira levar o arquivo em PDF, será cobrado R$ 2,00</p>
                                         </div>
                                         <div class="card-footer">
                                             <button onclick="window.open('https://www.canva.com/folder/FAFMJ7meJWk', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
@@ -144,8 +148,9 @@
                                         <img src="{{ asset('storage/cpf.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
                                         <div class="card-body">
                                             <h5 class="card-title">CPF</h5>
+                                            <hr />
                                             <p class="card-text">Valor a ser cobrado é de R$ 5,00 para cada documento/consulta.</p>
-                                            <p class="card-text">Caso tenha mais de uma página cobrar R$ 0,50 a mais para cada página.</p>
+                                            <p class="card-text">Caso cliente queira impressão em colorido o documento ficará R$ 7,00</p>
                                             <div class="card-footer">
                                                 <button onclick="window.open('https://servicos.receita.fazenda.gov.br/servicos/cpf/consultasituacao/consultapublica.asp', '_blank')" type="button" class="btn btn-success col-10">Consulta CPF</button>
                                             </div>
@@ -153,10 +158,7 @@
                                                 <button onclick="window.open('https://servicos.receita.fazenda.gov.br/Servicos/CPF/alterar/default.asp', '_blank')" type="button" class="btn btn-success col-10">Atualiza CPF</button>
                                             </div>
                                             <div class="card-footer">
-                                                <button onclick="window.open('https://servicos.receita.fazenda.gov.br/Servicos/CPF/ImpressaoComprovante/ConsultaImpressao.asp', '_blank')" type="button" class="btn btn-success col-10">Comprovante de Inscrição</button>
-                                            </div>
-                                            <div class="card-footer">
-                                                <button onclick="window.open('https://cav.receita.fazenda.gov.br/autenticacao/login/index/5090', '_blank')" type="button" class="btn btn-success col-10">Obter o cartão de CPF</button>
+                                                <button onclick="window.open('https://servicos.receita.fazenda.gov.br/Servicos/CPF/ImpressaoComprovante/ConsultaImpressao.asp', '_blank')" type="button" class="btn btn-success col-10">Imprimir CPF</button>
                                             </div>
                                         </div>
                                     </div>
@@ -165,7 +167,9 @@
 
                                         <div class="card-body">
                                             <h5 class="card-title">Download Musicas MP3 no pen drive</h5>
+                                            <hr />
                                             <p class="card-text">Valor a ser cobrado é de R$ 20,00.</p>
+                                            <p class="card-text">Pedir para o cliente buscar somente no dia seguinte, porque é demorado.</p>
                                         </div>
                                         <div class="card-footer">
                                             <button onclick="window.open('https://bluemusic.com.br/baixar-musica-do-youtube/', '_blank')" type="button" class="btn btn-success col-10">Acesse por aqui</button>
@@ -179,8 +183,6 @@
                                             <p class="card-text">Valor a ser cobrado é de R$ 2,00 para cada documento.</p>
                                             <p class="card-text">Caso tenha mais de uma página e o cliente preferir (preto/branco) cobrar R$ 0,50 a mais para cada página.</p>
                                             <p class="card-text">Caso tenha mais de uma página e o cliente preferir (colorido) cobrar R$ 2,00 a mais para cada página.</p>
-
-                                            <hr />
                                             <div class="card-footer">
                                                 <button onclick="window.open('https://www.cifraclub.com.br/', '_blank')" type="button" class="btn btn-success col-10">Cifra Clube</button>
                                             </div>
