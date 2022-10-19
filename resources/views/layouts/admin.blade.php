@@ -72,7 +72,7 @@
 
       <!-- Nav Item - Serviços Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#servicosSection,#categoriascvSection" aria-expanded="true" aria-controls="collapseSection">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#servicosSection,#categoriasSection" aria-expanded="true" aria-controls="collapseSection">
           <i class="fas fa-fw fa-folder"></i>
           <span>Serviços</span>
         </a>
@@ -84,8 +84,8 @@
           </a>
         </div>
 
-        <div id="categoriascvSection" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <a class="nav-link">
+        <div id="categoriasSection" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <a class="nav-link" href="categorias">
             <h6 class="collapse-header">Categorias</h6>
           </a>
         </div>

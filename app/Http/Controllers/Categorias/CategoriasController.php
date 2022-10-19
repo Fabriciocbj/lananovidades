@@ -1,12 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\CategoriasCV;
+namespace App\Http\Controllers\Categorias;
 
 use App\Http\Controllers\Controller;
+use App\Models\Categorias as Categorias;
 use Illuminate\Http\Request;
 
-class CategoriasCVController extends Controller
+class CategoriasController extends Controller
 {
+    protected $categorias;
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +17,8 @@ class CategoriasCVController extends Controller
      */
     public function index()
     {
-        return view('layouts.forms.categoriascv');
+        $categorias = Categorias::all();
+         return view('layouts.forms.categorias.index', compact('categorias'));        
     }
 
     /**
@@ -35,7 +39,8 @@ class CategoriasCVController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->categorias->createCategorias($request->all()); 
+        return redirect()->route('categorias'); 
     }
 
     /**
@@ -46,7 +51,7 @@ class CategoriasCVController extends Controller
      */
     public function show($id)
     {
-        // return view('layouts\forms\categoriascv');
+        // return view('layouts\forms\categorias\categorias');
     }
 
     /**

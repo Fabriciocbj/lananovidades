@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Categorias\CategoriasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,20 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Route::resource(['categoriascv' => 'CategoriasCVController']);
+// Route::resource(['categorias' => 'CategoriasController']);
 
-Route::get('/categoriascv', [App\Http\Controllers\CategoriasCV\CategoriasCVController::class, 'index'])->name('categoriascv');
+// Route::get('/categorias', [CategoriasController::class]);
+
+// Route::get('/categorias', [App\Http\Controllers\Categorias\CategoriasController::class, 'index'])->name('categorias');
+
+// Route::get('/categorias', [App\Http\Controllers\Categorias\CategoriasController::class, 'create'])->name('categorias');
+
+// Route::get('/categorias', [App\Http\Controllers\Categorias\CategoriasController::class, 'destroy'])->name('categorias');
+
+// Route::get('/categorias', [App\Http\Controllers\Categorias\CategoriasController::class, 'show'])->name('categorias');
+
+// Route::get('/categorias', [App\Http\Controllers\Categorias\CategoriasController::class, 'show'])->name('categorias');
+
+
+
+Route::resource('categorias', CategoriasController::class);
