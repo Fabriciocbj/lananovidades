@@ -2,24 +2,48 @@
 
 @section('content')
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Cadastro Categorias</h2>
+@if ($errors->any())
+<div class="alert alert-danger">
+    There were some problems with your input.<br><br>
+    <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
+
+<body>
+    <div class="container mt-4">
+        @if(session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+        @endif
+        <div class="card">
+            <div class="card-header text-center font-weight-bold">
+                Categorias - Criar Registro
             </div>
-            <div class="pull-right">
-                <a class="btn btn-success float-right" href="{{ route('categorias.create') }}"> Nova Categoria</a>
+            <div class="card-body">
+                <form action="{{ route('categorias.store') }}" method="POST">
+                    @csrf
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <strong>Descrição:</strong>
+                                <input class="form-control" name="descricao" placeholder="Descrição"></input>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <a class="btn btn-info" href="{{ route('categorias.categorias')}}">Voltar</a>
+                        </div>
+                    </div>
+
+                </form>
             </div>
         </div>
     </div>
+</body>
 
-    @if ($message = Session::get('success'))
-    <div class="alert alert-success">
-        <p>{{ $message }}</p>
-    </div>
-    @endif
-
-  
-</div>
 @endsection

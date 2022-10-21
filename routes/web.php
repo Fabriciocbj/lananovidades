@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\Categorias\CategoriasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,20 +21,20 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Route::resource(['categorias' => 'CategoriasController']);
 
-// Route::get('/categorias', [CategoriasController::class]);
-
-// Route::get('/categorias', [App\Http\Controllers\Categorias\CategoriasController::class, 'index'])->name('categorias');
-
-// Route::get('/categorias', [App\Http\Controllers\Categorias\CategoriasController::class, 'create'])->name('categorias');
-
-// Route::get('/categorias', [App\Http\Controllers\Categorias\CategoriasController::class, 'destroy'])->name('categorias');
-
-// Route::get('/categorias', [App\Http\Controllers\Categorias\CategoriasController::class, 'show'])->name('categorias');
-
-// Route::get('/categorias', [App\Http\Controllers\Categorias\CategoriasController::class, 'show'])->name('categorias');
+// Route::resource('/categorias', CategoriasController::class);
 
 
+Route::name('categorias.')->group(function () {
+    Route::get('/categorias', [App\Http\Controllers\Categorias\CategoriasController::class, 'index'])->name('categorias');
+    Route::get('/show/{id}', [App\Http\Controllers\Categorias\CategoriasController::class, 'show'])->name('show');
 
-Route::resource('categorias', CategoriasController::class);
+    Route::get('/create', [App\Http\Controllers\Categorias\CategoriasController::class, 'create'])->name('create');
+    Route::post('/store', [App\Http\Controllers\Categorias\CategoriasController::class, 'store'])->name('store');
+
+    Route::post('/delete/{id}', [App\Http\Controllers\Categorias\CategoriasController::class, 'destroy'])->name('destroy');
+
+    Route::get('/edit/{id}', [App\Http\Controllers\Categorias\CategoriasController::class, 'edit'])->name('edit');
+    Route::put('/update', [App\Http\Controllers\Categorias\CategoriasController::class, 'update'])->name('update');
+    Route::post('/patch', [App\Http\Controllers\Categorias\CategoriasController::class, 'store'])->name('patch');
+});

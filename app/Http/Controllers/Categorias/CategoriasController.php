@@ -17,8 +17,12 @@ class CategoriasController extends Controller
      */
     public function index()
     {
+        $categorias = Categorias::latest()->paginate(5);
+
+        // return view('layouts.forms.categorias.index', compact('categorias'))
+        //     ->with('i', (request()->input('page', 1) - 1) * 5);
         $categorias = Categorias::all();
-         return view('layouts.forms.categorias.index', compact('categorias'));        
+        return view('layouts.forms.categorias.index', compact('categorias'));
     }
 
     /**
@@ -28,7 +32,8 @@ class CategoriasController extends Controller
      */
     public function create()
     {
-        //
+        $categorias = null;
+        return view("layouts.forms.categorias.create");
     }
 
     /**
@@ -39,8 +44,16 @@ class CategoriasController extends Controller
      */
     public function store(Request $request)
     {
-        $this->categorias->createCategorias($request->all()); 
-        return redirect()->route('categorias'); 
+        $request->validate([
+            'descricao' => 'required',
+        ]);
+        Categorias::create($request->all());
+     
+        $categorias = Categorias::all();
+        return view('layouts.forms.categorias.index', compact('categorias'));
+
+        // return redirect()->route('categorias')
+        //                 ->with('success','Categoria created successfully.');
     }
 
     /**
@@ -51,7 +64,8 @@ class CategoriasController extends Controller
      */
     public function show($id)
     {
-        // return view('layouts\forms\categorias\categorias');
+        $categorias = Categorias::find($id);
+        return view('layouts.forms.categorias.show', compact('categorias'));
     }
 
     /**
@@ -62,7 +76,9 @@ class CategoriasController extends Controller
      */
     public function edit($id)
     {
-        //
+        printf('teste 1');
+        $categorias = Categorias::find($id);
+        return view('layouts.forms.categorias.edit',compact('categorias'));
     }
 
     /**
@@ -72,9 +88,21 @@ class CategoriasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Categorias $categorias)
     {
-        //
+        
+        printf('teste 2');
+        print($request);
+        printf($categorias);
+        
+
+
+        $categorias->update($request->all());    
+        $categorias = Categorias::all();
+        // return view('layouts.forms.categorias.index', compact('categorias'));
+        
+        return redirect()->route('categorias.categorias')
+        ->with('success','User updated successfully');
     }
 
     /**
@@ -85,6 +113,10 @@ class CategoriasController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $categorias = Categorias::find($id);
+        $categorias->delete();
+    
+        return redirect()->route('categorias.index')
+                        ->with('success','User deleted successfully');
     }
 }

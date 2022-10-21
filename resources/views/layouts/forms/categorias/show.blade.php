@@ -2,50 +2,44 @@
 
 @section('content')
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Cadastro Categorias</h2>
+<head>
+    <title>Cadastro de Categorias</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        @if(session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+        @endif
+        <div class="card">
+            <div class="card-header text-center font-weight-bold">
+                Categorias - Visualizar Registro
             </div>
-            <div class="pull-right">
-                <a class="btn btn-success float-right" href="{{ route('categorias.create') }}"> Nova Categoria</a>
+            <div class="card-body">
+                <form name="show-categoria-form" id="show-get-form" method="POST">
+                    @csrf
+                    <div class="col-xs-2 col-sm-2 col-md-2">
+                        <div class="form-group">
+                            <label for="id">Registro</label>
+                            <input type="text" id="id" name="id" value="{{ $categorias->id }}" disabled class="form-control" required="">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <label for="descricao">Descrição</label>
+                            <input type="text" id="descricao" name="descricao" value="{{ $categorias->descricao }}" disabled class="form-control" required="">
+                            <!-- <textarea name="descricao" class="form-control" required=""></textarea> -->
+                        </div>
+                    </div>
+                    <a class="btn btn-info" href="{{ route('categorias.categorias')}}">Voltar</a>
+
+                </form>
             </div>
         </div>
     </div>
 
-    @if ($message = Session::get('success'))
-    <div class="alert alert-success">
-        <p>{{ $message }}</p>
-    </div>
-    @endif
-
-    <table class="table table-bordered">
-        <tr>
-            <th>Registro</th>
-            <th>Descrição</th>
-
-            <th width="280px">Action</th>
-        </tr>
-        @foreach ($categorias as $categoria)
-        <tr>
-            <td>{{ $categoria->id    }}</td>
-            <td>{{ $categoria->descricao }}</td>
-            <td>
-                <form action="{{ route('categorias.destroy',$categoria->id) }}" method="POST">
-
-                    <a class="btn btn-info" href="{{ route('categorias.show',$categoria->id) }}">Show</a>
-
-                    <a class="btn btn-primary" href="{{ route('categorias.edit',$categoria->id) }}">Edit</a>
-
-                    @csrf
-                    @method('DELETE')
-
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form>
-            </td>
-        </tr>
-        @endforeach
-    </table>
-</div>
-@endsection
+    @endsection
