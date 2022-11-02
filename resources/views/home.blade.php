@@ -231,6 +231,17 @@
                                         </div>
                                     </div>
                                     <div class="card">
+                                        <img src="{{ asset('storage/gps.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GPS</h5>
+                                            <hr />
+                                            <p class="card-text">SAL - Sistema de Acréscimos Legais.</p>
+                                            <p class="card-text">Valor a ser cobrado é de R$ 2,00 taxa serviço.</p>
+                                            <p class="card-text">Caso tenha mais de uma página cobrar R$ 0,50 a mais para cada página.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button onclick="window.open('http://sal.receita.fazenda.gov.br/PortalSalInternet/faces/pages/calcContribuicoesCI/filiadosApos/selecionarOpcoesCalculoApos.xhtml', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
+                                        </div>
                                     </div>
                                     <div class="card">
                                     </div>
