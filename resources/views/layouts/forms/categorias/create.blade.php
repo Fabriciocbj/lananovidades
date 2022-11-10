@@ -31,12 +31,12 @@
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
                                 <strong>Descrição:</strong>
-                                <input class="form-control" name="descricao" placeholder="Descrição"></input>
+                                <input class="form-control" name="descricao" minlength="3" maxlength="100" placeholder="Descrição"></input>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <button type="submit" class="btn btn-primary">Submit</button>
-                            <a class="btn btn-info" href="{{ route('categorias.categorias')}}">Voltar</a>
+                            <a class="btn btn-info" href="{{ route('categorias.index')}}">Voltar</a>
                         </div>
                     </div>
 

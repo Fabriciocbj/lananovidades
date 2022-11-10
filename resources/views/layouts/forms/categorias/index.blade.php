@@ -28,19 +28,27 @@
 
             <th width="280px">Action</th>
         </tr>
-        @foreach ($categorias as $categoria)
+        @foreach ($categoria as $registro)
         <tr>
-            <td>{{ $categoria->id}}</td>
-            <td>{{ $categoria->descricao }}</td>
-            <td>
-                <form method="POST">
+            <td>{{ $registro->id}}</td>
+            <td>{{ $registro->descricao }}</td>
 
-                    <a class="btn btn-info" href="{{ route('categorias.show',$categoria->id)}}">Show</a>
-                    <a href="{{ route('categorias.edit',$categoria->id)}}" class="btn btn-warning">Edit</a>
-                    
-                    <a class="btn btn-danger"  >Delete</a>
+            <td style='width:15%'>
+                <form action="{{ route('categorias.destroy',$registro->id) }}" method="POST">
+
+                    <a class="btn btn-info" href="{{ route('categorias.show', $registro->id) }}">Show</a>
+
+                    <a class="btn btn-primary" href="{{ route('categorias.edit', $registro->id) }}">Edit</a>
+
+                    <!-- @csrf
+                    @method('DELETE')
+
+                    <button type="submit" class="btn btn-danger">Delete</button> -->
                 </form>
             </td>
+
+
+
         </tr>
         @endforeach
     </table>

@@ -16,11 +16,23 @@
         </div>
         @endif
         <div class="card">
+
+            @if ($errors->any())
+            <div class="alert alert-danger">
+                There were some problems with your input.<br><br>
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
+
             <div class="card-header text-center font-weight-bold">
                 Categorias - Editar Registro
             </div>
             <div class="card-body">
-                <form action="{{ route('categorias.update') }}" method="POST">
+                <form action="{{ route('categorias.update', $categoria->id) }}" method="POST">
                     @csrf
                     @method('PUT')
 
@@ -28,18 +40,18 @@
                         <div class="col-xs-2 col-sm-2 col-md-2">
                             <div class="form-group">
                                 <strong>Registro:</strong>
-                                <input type="text" name="id" value="{{ $categorias->id }}" class="form-control" disabled placeholder="Registro">
+                                <input type="number" name="id" min="10" max="10" value="{{ $categoria->id }}" class="form-control" disabled placeholder="Registro">
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
                                 <strong>Descrição:</strong>
-                                <input type="text" name="descricao" value="{{ $categorias->descricao }}" class="form-control" placeholder="Descrição">
+                                <input type="text" name="descricao" minlength="3" maxlength="100" value="{{ $categoria->descricao }}" class="form-control" placeholder="Descrição">
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <button type="submit" class="btn btn-primary">Submit</button>
-                            <a class="btn btn-info" href="{{ route('categorias.categorias')}}">Voltar</a>
+                            <a class="btn btn-info" href="{{ route('categorias.index')}}">Voltar</a>
                         </div>
                     </div>
 

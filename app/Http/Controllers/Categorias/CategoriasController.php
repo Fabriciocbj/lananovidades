@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers\Categorias;
 
+use Exception;
 use App\Http\Controllers\Controller;
 use App\Models\Categorias as Categorias;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class CategoriasController extends Controller
 {
-    protected $categorias;
+    protected $categoria;
 
     /**
      * Display a listing of the resource.
@@ -17,12 +19,16 @@ class CategoriasController extends Controller
      */
     public function index()
     {
-        $categorias = Categorias::latest()->paginate(5);
+        // $categorias = Categorias::latest()->paginate(5);
 
-        // return view('layouts.forms.categorias.index', compact('categorias'))
+        // return view('categorias.index',compact('categorias'))
         //     ->with('i', (request()->input('page', 1) - 1) * 5);
-        $categorias = Categorias::all();
-        return view('layouts.forms.categorias.index', compact('categorias'));
+
+
+        $categoria = Categorias::latest()->paginate(5);
+
+        $categoria = Categorias::all();
+        return view('layouts.forms.categorias.index', compact('categoria'));
     }
 
     /**
@@ -32,8 +38,8 @@ class CategoriasController extends Controller
      */
     public function create()
     {
-        $categorias = null;
-        return view("layouts.forms.categorias.create");
+        $categoria = null;
+        return view('layouts.forms.categorias.create');
     }
 
     /**
@@ -48,9 +54,9 @@ class CategoriasController extends Controller
             'descricao' => 'required',
         ]);
         Categorias::create($request->all());
-     
-        $categorias = Categorias::all();
-        return view('layouts.forms.categorias.index', compact('categorias'));
+
+        $categoria = Categorias::all();
+        return view('layouts.forms.categorias.index', compact('categoria'));
 
         // return redirect()->route('categorias')
         //                 ->with('success','Categoria created successfully.');
@@ -64,8 +70,8 @@ class CategoriasController extends Controller
      */
     public function show($id)
     {
-        $categorias = Categorias::find($id);
-        return view('layouts.forms.categorias.show', compact('categorias'));
+        $categoria = Categorias::find($id);
+        return view('layouts.forms.categorias.show', compact('categoria'));
     }
 
     /**
@@ -74,35 +80,31 @@ class CategoriasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Categorias $categoria)
     {
-        printf('teste 1');
-        $categorias = Categorias::find($id);
-        return view('layouts.forms.categorias.edit',compact('categorias'));
+        return view('layouts.forms.categorias.edit', compact('categoria'));
     }
 
     /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * 
      */
-    public function update(Request $request, Categorias $categorias)
+    public function update(Request $request, Categorias $categoria)
     {
-        
-        printf('teste 2');
-        print($request);
-        printf($categorias);
-        
+        $request->validate([
+            'descricao' => 'required',
+        ]);
 
 
-        $categorias->update($request->all());    
-        $categorias = Categorias::all();
-        // return view('layouts.forms.categorias.index', compact('categorias'));
-        
-        return redirect()->route('categorias.categorias')
-        ->with('success','User updated successfully');
+        $categoria->update($request->all());
+
+        // $idRegistro = Categorias::updateProperties($categoria);
+
+        if (!empty($categoria)) {
+            return redirect()->route('categorias.index')
+                ->with('success', 'User updated successfully');
+        }
+
+        return response()->json(['msg' => 'REGISTER.UPDATE.ERROR'], 203);
     }
 
     /**
@@ -111,12 +113,11 @@ class CategoriasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        $categorias = Categorias::find($id);
-        $categorias->delete();
-    
+    public function destroy(Categorias $categoria)
+    {        
+        $categoria->delete();
+
         return redirect()->route('categorias.index')
-                        ->with('success','User deleted successfully');
+            ->with('success', 'User deleted successfully');
     }
 }
