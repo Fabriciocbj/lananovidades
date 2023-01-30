@@ -417,6 +417,8 @@
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
         @if (Route::has('login'))
         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+            <button onclick="window.open('https://www.detran.sp.gov.br/wps/portal/!ut/p/z1/lZFLDoIwFEXXwgp6SxtShgWB8guCCtiJYWRIFB0Y1y8wI9GCd9b0nPblXaJJS_TQvftr9-ofQ3cbz2ftXLCIhFfZHgMin5NmBhjHwfWoBJgSkKI6KpmBgjtEj9ecugGlPvKiVgFKFSq6hxgfwIof8T99EdTh5LOQBoWNFNv8pISvlLCziO58SJfzPE5SBpdt8_EjcuP_BkBv2b8B0ObxGqJnxNSgEZgqWgJfOpgB05LXxnzeT3Na9HEvLesDV9RSXQ!!/dz/d5/L2dBISEvZ0FBIS9nQSEh/#Z7_419E11C0MOVHE0QHFH1P080040', '_blank')" type="button" class="btn btn-success">Site</button>
+
             @auth
             <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
             @else
