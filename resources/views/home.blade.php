@@ -67,7 +67,7 @@
                                             <p class="card-text">Para Laudo de exame, imprimir (preto/branco) e cobrar R$ 1,00 para cada página.</p>
                                             <p class="card-text">Caso tenha mais de uma página e o cliente preferir (colorido) cobrar R$ 2,00 a mais para cada página.</p>
 
-                                            <div class="card-footer">
+                                            <!--                                             <div class="card-footer">
                                                 <button onclick="window.open('https://tomcat.santacasalimeira.com.br/LaboratorioWeb/indexLaboratorio.jsp', '_blank')" type="button" class="btn btn-success col-10">Frei Galvão</button>
                                             </div>
                                             <div class="card-footer">
@@ -78,6 +78,18 @@
                                             </div>
                                             <div class="card-footer">
                                                 <button onclick="window.open('https://areadopaciente.amorsaude.com.br/patient-interface/rpyX/login', '_blank')" type="button" class="btn btn-success col-10">Amor e Saúde</button>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('https://pixeon.clickvita.com.br/#/instituicao/ULTRAVIEW', '_blank')" type="button" class="btn btn-success col-10">Ultra View</button>
+                                            </div> -->
+
+                                            <div class="card-footer">
+                                                
+                                                <div><a href="https://tomcat.santacasalimeira.com.br/LaboratorioWeb/indexLaboratorio.jsp" target="_blank">Frei Galvão</a></div>
+                                                <div><a href="https://resultadoexame.hapvida.com.br/autenticacao.xhtml" target="_blank">Hapvida</a></div>
+                                                <div><a href="https://meddiagnostico.com.br/site" target="_blank">Med Diagnostico</a></div>
+                                                <div><a href="https://areadopaciente.amorsaude.com.br/patient-interface/rpyX/login" target="_blank">Amor e Saúde</a></div>
+                                                <div><a href="https://pixeon.clickvita.com.br/#/instituicao/ULTRAVIEW" target="_blank">Ultra View</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -244,6 +256,17 @@
                                         </div>
                                     </div>
                                     <div class="card">
+                                        <img src="{{ asset('storage/posterizer.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Aumentar Imagem</h5>
+                                            <hr />
+                                            <p class="card-text">Valor a ser cobrado é de R$ 2,00 taxa serviço.</p>
+                                            <p class="card-text">Caso tenha mais de uma página e for branco/preto cobrar R$ 0,50 a mais para cada página.</p>
+                                            <p class="card-text">Caso tenha mais de uma página e for colorido cobrar R$ 2,00 a mais para cada página.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button onclick="window.open('http://posterizer.online/rasterbator/', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
+                                        </div>
                                     </div>
                                     <div class="card">
                                     </div>
