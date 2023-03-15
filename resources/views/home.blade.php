@@ -90,6 +90,8 @@
                                                 <div><a href="https://meddiagnostico.com.br/site" target="_blank">Med Diagnostico</a></div>
                                                 <div><a href="https://areadopaciente.amorsaude.com.br/patient-interface/rpyX/login" target="_blank">Amor e Saúde</a></div>
                                                 <div><a href="https://pixeon.clickvita.com.br/#/instituicao/ULTRAVIEW" target="_blank">Ultra View</a></div>
+                                                <div><a href="https://pixeon.clickvita.com.br/#/instituicao/CRL" target="_blank">CRL - Centro Radiológico</a></div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -269,9 +271,23 @@
                                         </div>
                                     </div>
                                     <div class="card">
+                                        <img src="{{ asset('storage/boletos.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Outros Boletos</h5>
+                                            <hr />
+                                            <p class="card-text">Valor a ser cobrado é de R$ 2,00 taxa serviço.</p>
+                                            <p class="card-text">Caso tenha mais de uma página e for branco/preto cobrar R$ 0,50 a mais para cada página.</p>
+                                            <div class="card-footer">
+                                                <button onclick="window.open('https://www.itau.com.br/cartoes/magalu/consulte-sua-fatura', '_blank')" type="button" class="btn btn-success col-10">Magalu</button>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
+
+
+                            
 
                     </body>
                 </div>
