@@ -83,14 +83,14 @@
                                             </div> -->
 
                                             <div class="card-footer">
-                                                
+
                                                 <div><a href="https://tomcat.santacasalimeira.com.br/LaboratorioWeb/indexLaboratorio.jsp" target="_blank">Frei Galvão</a></div>
                                                 <div><a href="https://resultadoexame.hapvida.com.br/autenticacao.xhtml" target="_blank">Hapvida</a></div>
                                                 <div><a href="https://meddiagnostico.com.br/site" target="_blank">Med Diagnostico</a></div>
                                                 <div><a href="https://areadopaciente.amorsaude.com.br/patient-interface/rpyX/login" target="_blank">Amor e Saúde</a></div>
                                                 <div><a href="https://pixeon.clickvita.com.br/#/instituicao/ULTRAVIEW" target="_blank">Ultra View</a></div>
                                                 <div><a href="https://pixeon.clickvita.com.br/#/instituicao/CRL" target="_blank">CRL - Centro Radiológico</a></div>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -186,9 +186,9 @@
                                             <h5 class="card-title">Download Musicas MP3 no pen drive</h5>
                                             <hr />
                                             <p class="card-text">Até 30 músicas cobrar R$ 20,00.</p>
-                                            <p class="card-text">Caso for até 60 músicas cobrar R$ 30,00.</p>                                            
-                                            <p class="card-text">Caso for até 90 músicas cobrar R$ 40,00.</p>                                            
-                                            
+                                            <p class="card-text">Caso for até 60 músicas cobrar R$ 30,00.</p>
+                                            <p class="card-text">Caso for até 90 músicas cobrar R$ 40,00.</p>
+
                                             <p class="card-text">Pedir para o cliente buscar somente no dia seguinte, porque é demorado.</p>
                                         </div>
                                         <div class="card-footer">
@@ -276,18 +276,51 @@
                                         <div class="card-body">
                                             <h5 class="card-title">Outros Boletos</h5>
                                             <hr />
-                                            <p class="card-text">Valor a ser cobrado é de R$ 3,00 taxa serviço.</p>                                            
+                                            <p class="card-text">Valor a ser cobrado é de R$ 3,00 taxa serviço.</p>
                                             <div class="card-footer">
                                                 <button onclick="window.open('https://www.itau.com.br/cartoes/magalu/consulte-sua-fatura', '_blank')" type="button" class="btn btn-success col-10">Magalu</button>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
 
 
-                            
+                            </br>
+
+                            <div class="bd-example">
+                                <div class="card-group">
+
+                                    <div class="card">
+                                        <img src="{{ asset('storage/sus.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sistema Único de Saúde</h5>
+                                            <hr />
+                                            <p class="card-text">Largura da Impressão 5 cm de cada lado.</p>
+                                            <p class="card-text">Valor a ser cobrado é de R$ 3,00 taxa serviço.</p>
+                                            <p class="card-text">Caso tenha mais de uma página cobrar R$ 0,50 a mais para cada página.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button onclick="window.open('https://conectesus-paciente.saude.gov.br/perfil', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        
+                                    </div>
+                                    <div class="card">
+                                        
+                                    </div>
+                                    <div class="card">
+                                         
+                                    </div>
+                                    <div class="card">
+                                         
+
+                                    </div>
+                                </div>
+                            </div>
+
 
                     </body>
                 </div>
