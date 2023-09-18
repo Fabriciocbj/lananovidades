@@ -306,16 +306,38 @@
                                         </div>
                                     </div>
                                     <div class="card">
-                                        
+
                                     </div>
                                     <div class="card">
-                                        
+
                                     </div>
                                     <div class="card">
-                                         
+
                                     </div>
+
                                     <div class="card">
-                                         
+                                        <img src="{{ asset('storage/statusInvest.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">status Invest</h5>
+                                            <hr />
+
+                                            <div class="card-footer">
+
+                                                <div><a href="https://statusinvest.com.br/acoes/petr3" target="_blank">petr3</a></div>
+                                                <div><a href="https://statusinvest.com.br/acoes/vale3" target="_blank">vale3</a></div>
+                                                <div><a href="https://statusinvest.com.br/acoes/bbas3" target="_blank">branco do brasil</a></div>
+                                                <div><a href="https://statusinvest.com.br/acoes/itub4" target="_blank">itau</a></div>
+                                                <div><a href="https://statusinvest.com.br/acoes/sanb11" target="_blank">santander</a></div>
+                                                <div><a href="https://statusinvest.com.br/acoes/ektr4" target="_blank">Elektro</a></div>
+                                                <div><a href="https://statusinvest.com.br/acoes/taee11" target="_blank">taesa</a></div>
+                                                <div><a href="https://statusinvest.com.br/acoes/cpfe3" target="_blank">cpf</a></div>
+                                                <div><a href="https://statusinvest.com.br/acoes/ektr4" target="_blank">Elektro</a></div>
+
+
+
+
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
