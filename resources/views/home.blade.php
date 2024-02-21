@@ -64,7 +64,7 @@
                                             <p class="card-text">Valor a ser cobrado é de R$ 5,00 taxa serviço.</p>
                                             <p class="card-text">Para resultado de exame, caso tenha mais de uma página e o cliente preferir (preto/branco) cobrar R$ 0,50 a mais para cada página.</p>
                                             <p class="card-text">Para Laudo de exame, imprimir (preto/branco) e cobrar R$ 1,00 para cada página.</p>
-                                            <p class="card-text">Caso tenha mais de uma página e o cliente preferir (colorido) cobrar R$ 2,00 a mais para cada página.</p>
+                                            <p class="card-text">Caso tenha mais de uma página e o cliente preferir (colorido) cobrar R$ 3,00 a mais para cada página.</p>
 
                                             <!--                                             <div class="card-footer">
                                                 <button onclick="window.open('https://tomcat.santacasalimeira.com.br/LaboratorioWeb/indexLaboratorio.jsp', '_blank')" type="button" class="btn btn-success col-10">Frei Galvão</button>
@@ -101,8 +101,8 @@
                                             <hr />
                                             <p class="card-text">Valor a ser cobrado é de R$ 8,00 taxa serviço.</p>
                                             <p class="card-text">Caso tenha mais de uma página e o cliente preferir (preto/branco) cobrar R$ 0,50 a mais para cada página.</p>
-                                            <p class="card-text">Caso tenha mais de uma página e o cliente preferir (colorido) cobrar R$ 2,00 a mais para cada página.</p>
-                                            <p class="card-text">Caso o cliente queira levar o arquivo em PDF, será cobrado R$ 2,00</p>
+                                            <p class="card-text">Caso tenha mais de uma página e o cliente preferir (colorido) cobrar R$ 3,00 a mais para cada página.</p>
+                                            <p class="card-text">Caso o cliente queira levar o arquivo em PDF, será cobrado R$ 3,00</p>
                                         </div>
                                         <div class="card-footer">
                                             <button onclick="window.open('https://www.canva.com/folder/FAFMJ7meJWk', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
@@ -167,7 +167,7 @@
                                             <h5 class="card-title">CPF</h5>
                                             <hr />
                                             <p class="card-text">Valor a ser cobrado é de R$ 5,00 para cada documento/consulta.</p>
-                                            <p class="card-text">Caso cliente queira impressão em colorido, cobrar mais R$ 2,00</p>
+                                            <p class="card-text">Caso cliente queira impressão em colorido, cobrar mais R$ 3,00</p>
                                             <div class="card-footer">
                                                 <button onclick="window.open('https://servicos.receita.fazenda.gov.br/servicos/cpf/consultasituacao/consultapublica.asp', '_blank')" type="button" class="btn btn-success col-10">Consulta CPF</button>
                                             </div>
@@ -179,7 +179,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <!-- <div class="card">
                                         <img src="{{ asset('storage/musicamp3.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
 
                                         <div class="card-body">
@@ -194,7 +194,7 @@
                                         <div class="card-footer">
                                             <button onclick="window.open('https://bluemusic.com.br/baixar-musica-do-youtube/', '_blank')" type="button" class="btn btn-success col-10">Acesse por aqui</button>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="card">
                                         <img src="{{ asset('storage/letrasMusicas.jpg') }}" height="200" width="200" class="card-img-top" alt="" title="">
                                         <div class="card-body">
@@ -265,7 +265,7 @@
                                             <hr />
                                             <p class="card-text">Valor a ser cobrado é de R$ 3,00 taxa serviço, esse valor é para cada imagem aumentada.</p>
                                             <p class="card-text">Caso tenha mais de uma página e for branco/preto cobrar R$ 1,00 a mais para cada página.</p>
-                                            <p class="card-text">Caso tenha mais de uma página e for colorido cobrar R$ 2,00 a mais para cada página.</p>
+                                            <p class="card-text">Caso tenha mais de uma página e for colorido cobrar R$ 3,00 a mais para cada página.</p>
                                         </div>
                                         <div class="card-footer">
                                             <button onclick="window.open('http://posterizer.online/rasterbator/', '_blank')" type="button" class="btn btn-success">Acesse por aqui</button>
